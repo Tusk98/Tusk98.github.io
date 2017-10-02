@@ -9,6 +9,7 @@
     <script src="assets/javascripts/menus.js"></script>
   </head>
   <body>
+	<body onpageshow="normal(AutoSortDesc);normal(NoteTakingDesc);">
     <div id="wrapper">
       <div id="mainHeader">
         <a href="index.html" title="home" class="logo">
@@ -19,7 +20,7 @@
         <div id="siteNav">
           <h1>Projects</h1>
           <ul>
-            <li><a href="index.html" title="About me page">About me <br /></a></li>			
+            <li><a href="index.html" title="About me page">About me <br /></a></li>	.
             <li><a href="projects.html" title="Projects page">Projects <br /></a></li>
             <li><a href="passion.html" title="Passion page">Passion<br /></a></li> 
 			<li><a href="hobby.html" title="hobbies page">Hobbies<br /></a></li> 
@@ -37,16 +38,17 @@
       <div id="mainContent">
         <div id="contentHeader">
           <h2><b>Henry Wu's projects</b></h2>
+		  Hover your mouse over a project to see more details
         </div>
         
         <div id="mainArticle">
-          <div>
+			<div id="AutoSortDesc">
             <h2>AutoSort</h2>
 				<p>AutoSort began with a friend complaining about having to constantly move downloaded MP3 files from the downloads folder to his desktop. After completion and distributing to friends, by popular demand I added the functionality of moving Microsoft Word documents as well as PDF files.
 				</p>
-          </div>
+			</div>
 		  
-		  <div> 
+		  <div id="NoteTakingDesc"> 
 			<h2>Note-Taking-App</h2> 
 				<p>I just want to use my Android to take a note when I need it. Why so complicated?
 				<br>Simple and fit-for-use, that's how I developed this app.
@@ -60,16 +62,16 @@
       <div id="secondaryContent">
         <div id="specials" class="callOut">
           <h1>Project Repositories</h1>
-          <h2 class="top"><img src="assets/images/java_logo.png" alt="Java Logo" width="55" height="100" /><br>&nbsp;&nbsp;AutoSort</h2>
-          <p><a href="https://github.com/Tusk98/autoSort" title="AutoSort repo" target="_blank">&nbsp;&nbsp;AutoSort GitHub Repository</a></p>
-		  <!--
-		  <h2>Computer Science Courses<br /></h2> 
-		  <p>Software Design</p> -->
-          <h2><img class="android" src="assets/images/android_logo.png" alt="Android Studio Logo" width="55" height="66" /><br>&nbsp;&nbsp;Note-Taking-App</h2>
-          <p>
-		  <a href="https://github.com/Tusk98/Note-Taking-App" title="Note-Taking-App repo" target="_blank">&nbsp; &nbsp;Note-Taking-App Repository <br><br> </a>
+		  <div onmouseover="hover(AutoSortDesc)" onmouseleave="normal(AutoSortDesc)">
+			<h2 class="top"><img src="assets/images/java_logo.png" alt="Java Logo" width="55" height="100" /><br>&nbsp;&nbsp;AutoSort</h2>
+			<p><a href="https://github.com/Tusk98/autoSort" title="AutoSort repo" target="_blank">&nbsp;&nbsp;AutoSort GitHub Repository</a></p>
+		  </div>
+		  <div onmouseover="hover(NoteTakingDesc)" onmouseleave="normal(NoteTakingDesc)">
+			<h2><img class="android" src="assets/images/android_logo.png" alt="Android Studio Logo" width="55" height="66" /><br>&nbsp;&nbsp;Note-Taking-App</h2>
+			<p>
+			<a href="https://github.com/Tusk98/Note-Taking-App" title="Note-Taking-App repo" target="_blank">&nbsp; &nbsp;Note-Taking-App Repository <br><br> </a>
           </p>  
-		  
+		  </div>
 		  <h2><br><img src="assets/images/heli_pad.jpg" alt="Website logo" width="55" height="55">&nbsp;&nbsp;Henry Wu's Website</h2> 
 		  <p>
 		  &nbsp;&nbsp;This website. <br>

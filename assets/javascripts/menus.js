@@ -42,3 +42,11 @@ $(document).ready(function(){
 $(window).resize(function() {
  	enableMenus();
 });
+
+function normal(myDiv) { 
+	myDiv.style.opacity="0.0";
+}
+
+function hover(myDiv) { 
+	myDiv.style.opacity="1.0";
+}

@@ -200,8 +200,8 @@ span.accent {
 #mainContent {
   float: right;
   width: 740px;
-  margin-right: 25px;
-  overflow: hidden;
+  margin-right: 200px;
+  /*overflow: hidden;*/
 }
 #secondaryContent {
   float: left;
@@ -217,6 +217,7 @@ span.accent {
   height: 200px;
   width: 100%;
 }
+
 /* ^5----------------------- region-detail styles ------------------------ */
 /*  header  ^5a*/
 
@@ -764,7 +765,7 @@ span.accent {
   font-weight: normal;
   color: #3c6b92;
   padding-bottom: .1em;
-  margin-bottom: .5em;
+  margin-bottom: 1em;
   border-bottom: 2px solid #3c6b92;
 }
 #secondaryContent #specials h2 {
@@ -792,10 +793,9 @@ span.accent {
   float: left;
   padding-bottom: 1em;
 }
-#secondaryContent #specials img.android {
-  padding-top: 1em;
+#secondaryContent #specials img.OCA { 
+  padding-top: 0.8em;
 }
-
 /* footer region ^5h */  
 #pageFooter div {
   float: left;
