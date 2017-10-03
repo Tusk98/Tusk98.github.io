@@ -1,99 +1,50 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML> 
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Henry Wu's Hobbies</title>
     <link href="assets/stylesheets/hobby_style.css" rel="stylesheet" type="text/css" media="all">
-    <script src="assets/javascripts/jquery-1.5.1.min.js"></script>
-    <script src="assets/javascripts/jquery-ui-1.8.10.custom.min.js"></script>
     <script src="assets/javascripts/menus.js"></script>
+	<link rel="icon" href="heli_pad.jpg">
   </head>
-  <body>
-    <div id="wrapper">
-      <div id="mainHeader">
-        <a href="index.html" title="home" class="logo">
-          <div id="logo">
-            <h1>Hobbies</h1>
-          </div>
-        </a>
-        <div id="siteNav">
-          <h1>Hobbies</h1>
-          <ul>
-            <li><a href="index.html" title="About me page">About me <br /></a></li>			
-            <li><a href="projects.html" title="Projects page">Projects <br /></a></li>
-            <li><a href="passion.html" title="Passion page">Passion<br /></a></li> 
-			<li><a href="hobby.html" title="hobbies page">Hobbies<br /></a></li> 
-			<li><a href="">Contact me</a><br />
-				<ul> 
-					<li><a href="https://www.linkedin.com/in/yu-heng-henry-wu-225544145/" title="Henry's linkedin" target="_blank">LinkedIn</a></li> 
-					<li><a href="https://github.com/Tusk98" title="Henry's github" target="_blank">GitHub</a></li> 
-					<li><a href="mailto:yuheng.wu@mail.utoronto.ca" title="My email">My Email</a></li> 
-				</ul>
-			</li> 
-          </ul>
-        </div>
-      </div>
-	  
-	  <div id="mainContent">
-		<div id="mainArticle"> 
-			<h2>Page under Construction</h2>
-		</div>
-	  </div>
-  <!--
-      <div id="mainContent">
-        <div id="contentHeader">
-          <h2><b>Henry Wu's Hobbies</b></h2>
-        </div>
-        
-        <div id="mainArticle">
-          <div class="multiCol">
-		  <p>
-            <h2>Remote Control Airplanes</h2>
-			<img src="assets/images/albatros.jpg" alt="Albatros RC plane" height="300" width="400"> 
-			Nothing beats the feeling of a good flight. 
-		  </p>
-		  <p> 
-			<h2>Piano</h2> 
-			<img src="assets/images/piano.jpg" alt="Piano" height="300" width="400"> 
-			To play Fur Elise by Beethoven, I studied piano up to RCM level 8 to ensure I could play it.
-		  </p> 
-		  <p>
-			<h2>Ping pong</h2> 
-			<img src="assets/images/ping_pong.jpg" alt="Ping Pong" height="300" width="400"> 
-			The sound of the paddle hitting the ball is like nothing else.
-		  </p> 
-		  <p> 
-			<h2>Street Fighter</h2> 
-			<img src="assets/images/street_fighter_logo.png" alt="Street Fighter" height="176" width="300"> 
-			One of the first video games I played, and still play to this day.
-		  </p>
-		  </div>
-		  
-          
-        </div>
-      </div>
-      -->
-      
-      <div id="pageFooter">
-        <div id="quickLinks">
-          <h1>Quick Nav</h1>
-			  <ul id="quickNav">
-				<li><a href="index.html" title="About me page">About me <br /></a></li>			
-				<li><a href="projects.html" title="Projects page">Projects <br /></a></li>
-				<li><a href="passion.html" title="Passion page">Passion<br /></a></li> 
-				<li><a href="hobby.html" title="hobbies page">Hobbies<br /></a></li> 
-			  </ul>
-        </div>
+  
+  <body id="projects">
+	<body onpageshow="currentSlide(1)">
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		<div class="numbertext">1 / 4</div>
+		<img src="assets/images/apollo_35.jpg" style="width:100%;height:100%">
+		<div class="text">Nothing beats the feeling of a good flight!</div>
+	</div>
 
-        <div id="contact_info">
-          <h1>Contact me</h1>
-		  <ul>
-			<li><a href="mailto:yuheng.wu@mail.utoronto.ca" title="Henry's email">Yuheng.wu@mail.utoronto.ca<br /></a></li> 
-			<li><a href="https://www.linkedin.com/in/yu-heng-henry-wu-225544145/" title="Henry's linkedin" target="_blank">LinkedIn profile<br /></a></li>
-			<li><a href="https://github.com/Tusk98" title="Henry's github" target="_blank">GitHub repository<br /></a></li>
-		  </ul>
-        </div>
-      </div>
-    </div>
+	<div class="mySlides fade">
+		<div class="numbertext">2 / 4</div>
+		<img src="assets/images/ping_pong.jpg" style="width:100%;height:100%">
+		<div class="text">The sound of the paddle hitting the ball is like nothing else.</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">3 / 4</div>
+		<img src="assets/images/piano.jpg" style="width:100%;height:100%">
+		<div class="text">I played piano up to RCM Level 8 to ensure that I could play Fur Elise.</div>
+	</div>
+	
+	<div class="mySlides fade"> 
+		<div class="numbertext">4 / 4</div> 
+		<img src="assets/images/sf4_charSelect.jpg" style="width:100%;height:100%">
+		<div class="text">One of my favourite games to play in my free time.</div>
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span> 
+	<span class="dot" onclick="currentSlide(2)"></span> 
+	<span class="dot" onclick="currentSlide(3)"></span> 
+	<span class="dot" onclick="currentSlide(4)"></span>
+	</div>
   </body>
 </html>
