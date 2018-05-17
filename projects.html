@@ -20,7 +20,8 @@
 	
   </head>
   <body>
-	<body onpageshow="normal(AutoSortDesc);normal(NoteTakingDesc);">
+  <!-- To have the Hover over effect, you must add the id onto the normal fcn call here and below-->
+	<body onpageshow="normal(AutoSortDesc);normal(NoteTakingDesc);normal(WebsiteDesc);">
     <div id="wrapper">
       <div id="mainHeader">
         <a href="index.html" title="home" class="logo">
@@ -64,6 +65,13 @@
 				<br>Why all the hassle with pen and paper?
 				</p>
 		  </div>
+		
+		  <div id="WebsiteDesc">
+			<h2>Henry's Personal Website</h2> 
+				<p>I created a personal website to help me learn how to use HTML, CSS and JavaScript. It was originally housed on github.io but after using Microsoft Azure. I decided to move the housing 
+				to MS-Azure App Service.
+				</p>
+		  </div>
 		  
           
         </div>
@@ -72,20 +80,24 @@
       <div id="secondaryContent">
         <div id="specials" class="callOut">
           <h1>Project Repositories</h1>
+		  
 		  <div onmouseover="hover(AutoSortDesc)" onmouseleave="normal(AutoSortDesc)">
 			<h2 class="top"><img src="assets/images/java_logo.png" alt="Java Logo" width="55" height="100" /><br>&nbsp;&nbsp;AutoSort</h2>
 			<p><a href="https://github.com/Tusk98/autoSort" title="AutoSort repo" target="_blank">&nbsp;&nbsp;AutoSort GitHub Repository</a></p>
 		  </div>
+		  
 		  <div onmouseover="hover(NoteTakingDesc)" onmouseleave="normal(NoteTakingDesc)">
 			<h2><img class="android" src="assets/images/android_logo.png" alt="Android Studio Logo" width="55" height="66" /><br>&nbsp;&nbsp;EMFSO-Attendance</h2>
 			<p>
 			<a href="https://github.com/Tusk98/EMFSO-Attendance" title="Note-Taking-App repo" target="_blank">&nbsp; &nbsp;Attendance App Repository <br><br> </a>
           </p>  
 		  </div>
-		  <h2><br><img src="assets/images/heli_pad.jpg" alt="Website logo" width="55" height="55">&nbsp;&nbsp;Henry Wu's Website</h2> 
-		  <p>
-		  &nbsp;&nbsp;This website. <br>
-		  </p>
+		  <div onmouseover="hover(WebsiteDesc)" onmouseleave="normal(WebsiteDesc)">
+			  <h2><br><img src="assets/images/azure_transparent.png" alt="Website logo" width="55" height="55">&nbsp;&nbsp;Henry Wu's Website</h2> 
+			  <p>
+			  &nbsp;&nbsp;This website. <br>
+			  </p>
+		  </div>
         </div>
       </div>
       
