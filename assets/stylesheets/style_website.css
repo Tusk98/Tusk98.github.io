@@ -791,6 +791,7 @@ span.accent {
 #secondaryContent #specials img {
   float: left;
   padding-bottom: 1em;
+  padding-top: 1em;
 }
 #secondaryContent #specials img.OCA { 
   padding-top: 0.8em;
