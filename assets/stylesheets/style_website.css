@@ -796,6 +796,12 @@ span.accent {
 #secondaryContent #specials img.OCA { 
   padding-top: 0.8em;
 }
+
+#secondaryContent #specials img.datasci { 
+  padding-left:1em;
+  padding-right:1em;
+}
+
 /* footer region ^5h */  
 #pageFooter div {
   float: left;
