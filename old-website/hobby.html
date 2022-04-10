@@ -1,71 +1,76 @@
-<!DOCTYPE HTML> 
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Henry Wu's Hobbies</title>
-    <link href="assets/stylesheets/hobby_style.css" rel="stylesheet" type="text/css" media="all">
-    <script src="assets/javascripts/menus.js"></script>
-	<link rel="icon" href="heli_pad.jpg">
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109307947-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'UA-109307947-1');
-	</script>
-	
-  </head>
-  
-  <body id="projects">
-	<body onpageshow="currentSlide(1)">
-	<div class="slideshow-container">
-		
-	<div class="mySlides fade">
-		<div class="numbertext">1 / 4</div>
-		<img src="assets/images/apollo_35.jpg" style="width:100%;height:100%">
-		<div class="text">It takes 8 hours of maintenance in the workshop to get 8 enjoyable flights. It really is NOT a toy.</div>
-	</div>
-
-	<div class="mySlides fade">
-		<div class="numbertext">2 / 4</div>
-		<img src="assets/images/ping_pong.jpg" style="width:100%;height:100%">
-		<div class="text">Hitting the ball is simple, the hard part is playing it right.</div>
-	</div>
-
-	<div class="mySlides fade">
-		<div class="numbertext">3 / 4</div>
-		<img src="assets/images/piano.jpg" style="width:100%;height:100%">
-		<div class="text">I knew Fur Elise requires RCM level 7. So I made it to 8.</div>
-	</div>
-	
-	<div class="mySlides fade"> 
-		<div class="numbertext">4 / 4</div> 
-		<img src="assets/images/ayytrox_fix.png" style="width:100%;height:10%">
-		<div class="darktext">According to ranks, there are at least 29'000 people in the world that plays League of Legends better than I do.</div>
-	</div>
-	
-	
-	<!--
-	<div class="mySlides fade"> 
-		<div class="numbertext">4 / 4</div> 
-		<img src="assets/images/sf4_charSelect.jpg" style="width:100%;height:100%">
-		<div class="text">According to the game ranking, there are at least 2500 people in the world that plays this game better than I do.</div>
-	</div>
-	-->
-	
-	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	</div>
-	<br>
-
-	<div style="text-align:center">
-	<span class="dot" onclick="currentSlide(1)"></span> 
-	<span class="dot" onclick="currentSlide(2)"></span> 
-	<span class="dot" onclick="currentSlide(3)"></span> 
-	<span class="dot" onclick="currentSlide(4)"></span>
-	</div>
-  </body>
-</html>
+<font face="Courier New" size="2">
+<font color = "blue">SELECT</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "green"><i>&#45;&#45;&nbsp;ATTRIBUTES</i></font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">reporting_starts</font>&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">logdate</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">CASE</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%ipad%&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">OR</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%iphone%&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">OR</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%ipod%&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">OR</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%smartphone%&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">OR</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%tablet%&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">OR</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%blackberry%&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">OR</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%android%&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">OR</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%mobile%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Mobile&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%computer%&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">OR</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%desktop%&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">OR</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%console%&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">OR</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%linux%&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">OR</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%vista%&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">OR</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%xp%&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">OR</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%windows%&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">OR</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">impression_device</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%APPLE_OS_X%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Desktop&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">ELSE</font>&nbsp;<font color = "maroon">&quot;Unknown&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">END</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">device</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "red">'Facebook'</font>&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">publisher</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "red">'High&nbsp;Volume'</font>&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">partners_by_volume</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">CASE</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_set_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%_EN%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;EN&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_set_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%_FR%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;FR&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_set_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%_EFL%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;All&nbsp;Languages&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">ELSE</font>&nbsp;<font color = "maroon">&quot;NA&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">END</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">language</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "red">'Social'</font>&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">channel</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">CASE</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%BTS%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;BTS&nbsp;Event&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%school%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;BTS&nbsp;Seasonal&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%Kitchen%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Kitchen&nbsp;Event&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%Bed%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Bedroom&nbsp;Event&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%Wardrobe%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Wardrobe&nbsp;Event&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%Dining%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Dining&nbsp;Event&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%Bathroom%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Bathroom&nbsp;Event&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%AlwaysOnKtch%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Kitchen&nbsp;Always&nbsp;On&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%AlwaysOnBdrm%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Bedroom&nbsp;Always&nbsp;On&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%AlwaysOnWrdr%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Wardrobe&nbsp;Always&nbsp;On&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%AlwaysOnDnng%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Dining&nbsp;Always&nbsp;On&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">ad_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%AlwaysOnBthr%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Bathroom&nbsp;Always&nbsp;On&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">ELSE</font>&nbsp;<font color = "maroon">&quot;NA_facebook&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">END</font>&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">campaign</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">CASE</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">campaign_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%prospect%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Prospecting&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">campaign_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%remarketing%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Remarketing&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">campaign_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%similar%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Prospecting&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">campaign_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%campaign_name%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Remarketing&quot;</font>&nbsp;<font color = "green"><i>&#45;&#45;&nbsp;naming</i></font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">convention</font>&nbsp;<font color = "maroon">was</font>&nbsp;<font color = "blue">NOT</font>&nbsp;<font color = "maroon">followed</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">WHEN</font>&nbsp;<font color = "maroon">campaign_name</font>&nbsp;<font color = "blue">LIKE</font>&nbsp;<font color = "maroon">&quot;%ikea_roi_soc_wk24bathroomevent%&quot;</font>&nbsp;<font color = "blue">THEN</font>&nbsp;<font color = "maroon">&quot;Remarketing&quot;</font>&nbsp;<font color = "green"><i>&#45;&#45;&nbsp;naming&nbsp;convention&nbsp;was&nbsp;not&nbsp;followed</i></font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">ELSE</font>&nbsp;<font color = "maroon">&quot;NA_facebook&quot;</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">END</font>&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">tactic</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "green"><i>&#45;&#45;METRICS</i></font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">sum</font><font color = "maroon">(</font><font color = "maroon">amount_spent_cad</font><font color = "maroon">)</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">spend</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">sum</font><font color = "maroon">(</font><font color = "maroon">impressions</font><font color = "maroon">)</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">impressions</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">sum</font><font color = "maroon">(</font><font color = "maroon">link_clicks_28_days_after_clicking</font><font color = "maroon">)</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">clicks</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">sum</font><font color = "maroon">(</font><font color = "maroon">purchase_facebook_pixel_28_days_after_clicking</font><font color = "maroon">)</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">orders_ct</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">sum</font><font color = "maroon">(</font><font color = "maroon">purchase_facebook_pixel_7_days_after_viewing</font><font color = "maroon">)</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">orders_vt</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">sum</font><font color = "maroon">(</font><font color = "maroon">purchase_conversion_value_facebook_pixel_28_days_after_clicking</font><font color = "maroon">)</font>&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">revenue_ct</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">sum</font><font color = "maroon">(</font><font color = "maroon">purchase_conversion_value_facebook_pixel_7_days_after_viewing</font><font color = "maroon">)</font>&nbsp;&nbsp;&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">revenue_vt</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "black">0</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">AS</font>&nbsp;<font color = "maroon">store_visits</font>
+<br/><font color = "blue">FROM</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">[TestProject:TestDataSet.TestTable]</font>
+<br/><font color = "blue">GROUP</font>&nbsp;<font color = "blue">BY</font>&nbsp;<font color = "maroon">logdate</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">device</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">publisher</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">partners_by_volume</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">language</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">channel</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">campaign</font><font color = "silver">,</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">tactic</font>&nbsp;<font color = "maroon">ignore</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "blue">CASE</font>
+</font>
